@@ -32,6 +32,9 @@ public Livro saveLivro(Livro livro) {
 	return livroRepository.save(livro);
 }
 
-
+//query
+public List<Livro> buscaPorNome(String nome){
+	return livroRepository.buscarPorTitulo(nome);
+}
 
 }

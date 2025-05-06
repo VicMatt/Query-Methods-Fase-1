@@ -50,4 +50,39 @@ public class LivroController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(novolivro);
 	}
 	
+	@GetMapping("/buscar/{nome}")
+	 public List<Livro> ListarLivrosPorNome(@PathVariable String nome){
+		 return livroService.buscaPorNome(nome);
+	 }
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
